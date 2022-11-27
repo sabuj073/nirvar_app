@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.production.nirvar">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Nirvar"
+        tools:targetApi="31">
+        <activity
+            android:name=".ProfileUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReportActivityDummy"
+            android:exported="false" />
+        <activity
+            android:name=".HealthNotesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SharemyprofileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DonateBloodFormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BloodpagetypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenstrualCalanderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenstrualCalanderSelectFirstDateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GluecoseRateInputActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UploadOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrescriptionDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationTypeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PrescriptionHistory"
+            android:exported="false" />
+        <activity
+            android:name=".PrescriptionCategoryActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.production.nirvar.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <activity
+            android:name=".ScanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true"
+            android:label="Nirvar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>

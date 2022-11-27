@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="My Health" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/calendar"
+        android:title="Appointment" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/hospital"
+        android:title="HealthHacks" />
+    <item
+        android:id="@+id/navigation_blood_board"
+        android:icon="@drawable/blood"
+        android:title="Blood Board" />
+    <item
+        android:id="@+id/navigation_health_notes"
+        android:icon="@drawable/notes"
+        android:title="Health Notes" />
+
+</menu>
